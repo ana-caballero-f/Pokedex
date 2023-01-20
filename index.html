@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+    <script src="pokedex.js" defer></script>
+</head>
+
+<!-- COMIENZA EL BODY Y EL CONTENEDOR -->
+<body>
+    <div class="container">
+        <header class="header">
+        <div>
+            <h1 class="titulo">Pokédex</h1>
+        </div>
+<!-- FORMULARIO PARA SELECCIONAR POKEMONS -->
+            <form class="formulario">
+                <!-- por inicial (primera letra) -->
+                <div>
+                    <label class="label">Filtra por la inicial:</label>
+                    <input class="input" type="text" maxlength="1" onfocus="this.value='';" placeholder="Introduce la primera letra" id="letraInicio">    
+                </div>
+
+                <!-- por nombre completo -->
+                <div>
+                    <label class="label">Filtra por el nombre:</label>
+                    <input class="input" type="text" id="letras">
+                </div>
+
+                <!-- por tipo -->
+                <div>
+                    <label for="tipo" class="label">Filtra por tipo:</label>
+                    <select name="tipo" id="tipo1" class="select">
+                      <option value="">Todos</option>
+                      <option value="grass">grass</option>
+                      <option value="ice">ice</option>
+                      <option value="poison">poison</option>
+                      <option value="fire">fire</option>
+                      <option value="flying">flying</option>
+                      <option value="water">water</option>
+                      <option value="bug">bug</option>
+                      <option value="normal">normal</option>
+                      <option value="electric">electric</option>
+                      <option value="ground">ground</option>
+                      <option value="fairy">fairy</option>
+                      <option value="fighting">fighting</option>
+                      <option value="psychic">psyshic</option>
+                      <option value="rock">rock</option>
+                      <option value="steel">steel</option>
+                      <option value="dragon">dragon</option>
+                    </select>
+            
+                </div> 
+                
+                <div>
+                    <button class="listado"> Mostrar listado </button>
+                </div>
+            </form>
+        </header>
+            
+            
+            
+
+<!-- FIN FORMULARIO PARA SELECCIONAR POKEMONS -->
+
+        
+        <ol id="pokedex"></ol>
+    </div>
+    </div>
+    
+</body>
+
+</html>

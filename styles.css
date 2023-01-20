@@ -1,0 +1,161 @@
+body {
+    background-color: rgb(238, 218, 189);
+    margin: 0;
+    /* font-family: rubik; */
+    font-family: 'The Nautigal', cursive;
+    color: white;
+  }
+
+  .header {
+    overflow: hidden;
+    background-color: rgb(179, 180, 146);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height:260px;
+  }
+  .container {
+    border: solid 0.1px rgb(252, 246, 246);
+    margin-top: 250px;
+    /* border: 5px solid rgb(194, 29, 29); */
+    background-image: linear-gradient(rgb(158, 173, 152), rgb(238, 238, 220), rgb(191, 213, 224), rgb(220, 185, 224));
+  }
+
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+    /* border: 2px solid black; */
+    }
+    .formulario {
+      display: flex;
+      align-items:center;
+      margin-left: 190px;
+      margin-right: 190px;
+    }
+
+    .listado {
+      width: 100px;
+      height: 50px;
+      border-radius: 20px;
+    }
+  .card {
+    list-style: none;
+    padding: 40px;
+    background-color: #f4f4f4;
+    color: #222;
+    text-align: center;
+    /* border: 3px solid rgb(218, 26, 160); */
+    box-shadow: 5px 10px 20px #666 inset;
+}
+
+  .card-title {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: -10px;
+    /* border: 3px solid rgb(128, 224, 83); */
+  }
+  .card-subtitle {
+    font-weight: lighter;
+    font-size: 1.2em;
+    color: #666;
+    margin-top: -30px;
+
+    /* border: 3px solid rgb(171, 38, 185); */
+  }
+  .card-image {
+    background-color: rgb(233, 230, 230);
+    /* border: 3px solid rgb(35, 95, 8); */
+  }
+  #pokedex {
+    /* padding-inline-start: 0; */
+    margin: 250px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    /* grid-gap: 20px; */
+    /* border: 5px solid black; */
+    background-color: white;
+  }
+
+  #pokedex:hover {
+    animation: colores 5s infinite;
+  }
+  /* .card:hover {
+    animation: bounce 0.5s linear;
+  } */
+
+  @keyframes bounce {
+    20% {
+      transform: translateY(-6px);
+    }
+    40% {
+      transform: translateY(0px);
+    }
+    60% {
+      transform: translateY(-2px);
+    }
+    80% {
+      transform: translateY(-0px);
+    }
+  }
+
+  /* Clases creadas por mí */
+  .label {
+    font-size: 1.5em;
+  }
+  
+  .sile {
+    color: rgb(249, 255, 252);
+    background-color: rgb(58, 202, 58); 
+  }
+  .nole {
+    color: rgb(249, 255, 252);
+    background-color: rgb(231, 82, 82);
+    
+  }
+ 
+  .btn {
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0 6px #999;
+    margin: 8px;
+  }
+
+  .btn:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .btn-si {
+    border: solid 3px rgb(4, 104, 4);
+  }
+
+  .btn-si:hover {
+    background-color: rgb(4, 104, 4);
+  }
+  .btn-no {
+    border: solid 3px rgb(160, 10, 10);
+  }
+  .btn-no:hover {
+    background-color: rgb(160, 10, 10);
+  }
+
+  .textoLoQuiero {
+    color: black;
+  }
+
+  .amarillo {
+    color: rgb(92, 92, 63);
+    border: solid 3px yellowgreen;
+    border-radius: 100px;
+  }
+    
+  @keyframes colores {
+    0%   {background-color:rgba(252, 244, 244, 0.295); left:0px; top:0px;}
+    25%  {background-color:rgb(248, 248, 226); left:100px; top:0px;}
+    50%  {background-color:rgb(240, 240, 255); left:100px; top:100px;}
+    75%  {background-color:rgb(243, 255, 243); left:0px; top:100px;}
+    100% {background-color:rgb(232, 248, 245); left:0px; top:0px;}
+  }
